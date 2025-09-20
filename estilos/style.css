@@ -112,3 +112,36 @@ div#social a{
 div#social a:hover{
   color: var(--destaque-inverso);
 }
+
+section#detalhes {
+  grid-column: 2;
+}
+
+article{
+  background-color: var(--fundo-principal);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+article h2{
+  color: var(--destaque);
+  margin: 10px;
+}
+
+.video-container{
+  position: relative; /*pois a posição/proporção vão mudar*/
+  width: 100%; /*vai ocupar o tamanho da section 2*/
+  margin: auto; /*centraliza o conteúdo*/
+  aspect-ratio: 16/9; /*é o aspecto do formato do youtube*/
+}
+
+.video-container iframe{
+  position: absolute; /*fixa o vídeo em sua posição*/
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+
+}
